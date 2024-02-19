@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2019-2020 The LineageOS Project
-#
+# Copyright (C) 2019-2020 The LineageOS
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -14,6 +13,12 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+AFTERLIFE_BUILD_TYPE := UNOFFICIAL
+AFTERLIFE_MAINTAINER := STFU_CO
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_onclite
